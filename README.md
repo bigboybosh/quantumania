@@ -1,5 +1,5 @@
 # quantumania
-Contains my work related to utilizing Quantum Computing and performing Quantum Computations
+Contains our project related to exploring/researching Quantum Computing
 
 SETUP:
 First create a virtual environment
