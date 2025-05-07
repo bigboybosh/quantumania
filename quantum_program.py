@@ -12,15 +12,15 @@ from qiskit import QuantumCircuit
 
 # connect to the Azure Quantum workspace
 workspace = Workspace(
-    subscription_id="828e20f9-c57e-45b0-894d-37da7e650213",
-    resource_group="AzureQuantum", # resource_group should match with what's in MS Azure
-    name="joshQuantumWorkspace",
-    location="West US"
+    subscription_id= #"insert subscription_id here",
+    resource_group= #"insert resource_group here", # resource_group should match with what's in MS Azure
+    name= #"insert the name of your quantum workspace here",
+    location= #"insert your region or location here"
 )
 
 # connect to the quantum provider (choose a backend like IonQ or Quantinuum)
 provider = AzureQuantumProvider(workspace)
-backend = provider.get_backend("ionq.simulator")  # simulator or real hardware if available
+backend = provider.get_backend("ionq.simulator")  # simulator or real hardware if available, for this example we used IonQ
 print("Connected to:", backend.name())
 
 # define the quantum circuit
