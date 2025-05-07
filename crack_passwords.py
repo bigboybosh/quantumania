@@ -25,10 +25,10 @@ import numpy as np
 # 1. Azure Quantum Setup
 # ------------------------
 workspace = Workspace(
-    subscription_id="828e20f9-c57e-45b0-894d-37da7e650213",
-    resource_group="AzureQuantum",
-    name="joshQuantumWorkspace",
-    location="West US"
+    subscription_id= #"insert subscription_id here",
+    resource_group= #"insert resource_group here", # resource_group should match with what's in MS Azure
+    name= #"insert the name of your quantum workspace here",
+    location= #"insert your region or location here"
 )
 
 provider = AzureQuantumProvider(workspace)
